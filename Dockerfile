@@ -8,4 +8,5 @@ RUN venv/bin/pip install -r requirements.txt
 ADD helloworld.py helloworld.py
 ADD run.sh run.sh
 RUN chmod +x run.sh
+EXPOSE 5000
 CMD ["/bin/bash", "run.sh"]
